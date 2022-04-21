@@ -14,9 +14,59 @@
     /* header styles
    ------------------------------------------------------------------ */
    header .banner-text h1 {
-      font: 80px/1.1em 'Noto Sans TC Black', sans-serif;
+      font: 88px/1.1em 'Noto Sans TC Black', sans-serif;
       letter-spacing: -1px;
       margin: 0 auto 12px auto;
+   }
+
+   header .banner-text p {
+      font: 21px/1.9em 'merriweatherlight', serif;
+      color: #000;
+      border-left: 5px dotted #000;
+      padding: 0 0 20px 30px;
+      margin: 0;
+  }
+
+  header p .tooltip .tooltiptext {
+   font: 18px/1.1em 'Noto Sans TC Bold', serif;
+   text-transform: uppercase;
+   visibility: hidden;
+   white-space: normal;
+   background-color: #b9daf9;
+   border: 2px dashed #000;
+   color: #000;
+   padding: 5px 5px;
+
+   /* Position the tooltip text */
+   position: absolute;
+   z-index: 1;
+   bottom: 50%;
+   left: 25%; 
+   margin-left: 10px;
+ }
+
+   /* header .banner button {
+      font: 48px/1.1em 'Noto Sans TC Black', sans-serif;
+      margin: 30px 0 0 0;
+      background: #C7191B;
+      color: #fff;
+  } */
+      /* About Section
+   ------------------------------------------------------------------- */
+   #about h2{
+      font: 28px/1.1em 'Noto Sans TC Black', sans-serif;
+      letter-spacing: 5px;
+      padding: 10px;
+   }
+
+   #about h3{
+      font: 18px/1.1em 'Noto Sans TC Bold', sans-serif;
+   }
+
+   #about p{
+      font: 16px/1.2em 'merriweatherlight', serif;
+      border-left: 4px dotted #000;
+      padding: 0 0 10px 20px;
    }
 
 }
@@ -54,6 +104,7 @@
       height: 114px;
       margin-left: 12px;
    }
+
    #about .contact-details { width: 50%; }
    #about .download { width: 50%; }
 
@@ -112,7 +163,7 @@
 	   width: 48px;
 		height: 48px;
 		text-align: left;
-		background-color: #CC5200;
+		background-color: #B81719;
 		position: relative;
       border: none;
       float: right;
@@ -160,7 +211,7 @@
 	#nav-wrap:target > ul#nav	{
 	   display: block;
       padding: 30px 20px 48px 20px;
-      background: #1f2024;
+      background: #B81719;
       margin: 0 30px;
       clear: both;
    }
@@ -171,19 +222,30 @@
       margin: 0 auto; 
       padding: 0 4%;           
       text-align: left;
-      border-bottom: 1px solid #2D2E34;
+      border-bottom: 5px solid #fff;
       border-bottom-style: dotted; 
    }
   
    ul#nav li a {  
       display: block;    
+      color: #fff;
+      margin: 0;
+      padding: 0;      
+      margin: 12px 0; 
+      line-height: 16px; /* reset line-height from 48px */
+      border: none;
+      font-size: 21px;
+   }  
+   
+   ul#nav li.current a {  
+      display: block;
+      color: #000;
       margin: 0;
       padding: 0;      
       margin: 12px 0; 
       line-height: 16px; /* reset line-height from 48px */
       border: none;
    }  
-
 
    /* Header Styles
    -------------------------------------------------------------------- */

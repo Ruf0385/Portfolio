@@ -101,7 +101,7 @@ class ResumeMap extends Component {
     console.log(locations[location].category);
     if (locations[location].category == "school") {
       document.getElementById("resumeMap").childNodes[0].innerHTML =
-        "<span>Education</span>";
+        "<span>Study</span>";
     } else if (locations[location].category == "work") {
       document.getElementById("resumeMap").childNodes[0].innerHTML =
         "<span>Work</span>";
@@ -139,19 +139,8 @@ class ResumeMap extends Component {
               className={classes.location}
               onMouseEnter={this.onMouseEnterHandler}
             >
-              <h3>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.0"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 26 17"
-                >
-                  <path d="M 0,0 L 17,0 L 0,17 L 0,0 z" fill="#C7191B" />
-                </svg>
-                Lane Engineering, LLC
-              </h3>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.0" width="40" height="40" viewBox="0 0 26 17"><path d="M 0,0 L 17,0 L 0,17 L 0,0 z" fill="#C7191B" /></svg>
+              <h3>Lane Engineering, LLC</h3>
               <p>
                 <span className="info">
                   IT Manager & GIS Coordinator <span>•</span>{" "}
@@ -173,19 +162,8 @@ class ResumeMap extends Component {
               className={classes.location}
               onMouseEnter={this.onMouseEnterHandler}
             >
-              <h3>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.0"
-                  width="40"
-                  height="40"
-                  viewBox="0 0 26 17"
-                >
-                  <path d="M 0,0 L 17,0 L 0,17 L 0,0 z" fill="#C7191B" />
-                </svg>
-                Eastern Shore Regional GIS Cooperative
-              </h3>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.0" width="40" height="40" viewBox="0 0 26 17"><path d="M 0,0 L 17,0 L 0,17 L 0,0 z" fill="#C7191B" /></svg>
+              <h3>Eastern Shore Regional GIS Cooperative</h3>
               <p>
                 <span className="info">
                   GIS Specialist <span>•</span>{" "}
@@ -209,19 +187,8 @@ class ResumeMap extends Component {
                 className={classes.location}
                 onMouseEnter={this.onMouseEnterHandler}
               >
-                <h3>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns="http://www.w3.org/2000/svg"
-                    version="1.0"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 26 17"
-                  >
-                    <path d="M 0,0 L 17,0 L 0,17 L 0,0 z" fill="#C7191B" />
-                  </svg>
-                  Salisbury University
-                </h3>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.0" width="40" height="40" viewBox="0 0 26 17"><path d="M 0,0 L 17,0 L 0,17 L 0,0 z" fill="#C7191B" /></svg>
+                <h3>Salisbury University</h3>
                 <p>
                   <span className="info">
                     B.S. Degree in Geography (GIS) <span>•</span> Cum Laude{" "}
@@ -250,19 +217,8 @@ class ResumeMap extends Component {
                 className={classes.location}
                 onMouseEnter={this.onMouseEnterHandler}
               >
-                <h3>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns="http://www.w3.org/2000/svg"
-                    version="1.0"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 26 17"
-                  >
-                    <path d="M 0,0 L 17,0 L 0,17 L 0,0 z" fill="#C7191B" />
-                  </svg>
-                  Chesapeake College
-                </h3>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.0" width="40" height="40" viewBox="0 0 26 17"><path d="M 0,0 L 17,0 L 0,17 L 0,0 z" fill="#C7191B" /></svg>
+                <h3>Chesapeake College</h3>
                 <p>
                   <span className="info">
                     A.A. Degree in Engineering Technology <span>•</span>{" "}

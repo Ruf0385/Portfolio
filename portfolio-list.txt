@@ -1,0 +1,10 @@
+projects
+
+GeoDatabase
+React Burger Builder
+Build WCAA Website
+Web Scraper
+Solar Website Case Study
+Excel Budget Video
+Church Logo Design Process
+Scanning & Processing

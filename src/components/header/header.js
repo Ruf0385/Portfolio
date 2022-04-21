@@ -13,14 +13,13 @@ export default class Header extends Component {
             <li><a className="smoothscroll" href="#about">About</a></li>
             <li><a className="smoothscroll" href="#portfolio">Projects</a></li>
             <li><a className="smoothscroll" href="#resume">Resume</a></li>
-            <li><a className="smoothscroll" href="#lessons">Lessons</a></li>
             <li><a className="smoothscroll" href="#contact">Contact</a></li>
           </ul> {/* end #nav */}
         </nav> {/* end #nav-wrap */}
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">HELLO!&nbsp;🙋🏻‍♂️&nbsp;I'M, <span>Adam&nbsp;Ruf&nbsp;&mdash;&mdash;</span></h1>
-              <p>I am a technology enthusiest who works at Lane Engineering, LLC. I use <span>GIS</span> and <span>CAD</span> in the <span className="tooltip">AEC industry<span className="tooltiptext">Architecutre,&nbsp;Engineering,&nbsp;and&nbsp;Construction</span></span>.  I create fun projects by
+              <p>I am a technology enthusiest who works at Lane Engineering, LLC. I use <span>GIS</span> and <span>CAD</span> in the <span className="tooltip">AEC industry<span className="tooltiptext">Architecutre, Engineering, and Construction</span></span>.  I create fun projects by
                 combining these technologies with principles of design. Let's <a className="smoothscroll" href="#about"> scroll down </a>
                 to learn more about me.</p>
           </div>

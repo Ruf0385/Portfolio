@@ -13,18 +13,16 @@ class AboutMap extends Component {
     token: 'pk.eyJ1IjoicnVmMDM4NSIsImEiOiJjam1qaG9iOGQwZnNnM3ZxbHBkdmw4YTA4In0.p-EkzalIDB7Sbn3gSWA4GQ',
     mapboxSource: 'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js',
     mapWidth: '100%',
-    mapHeight: '80vh',
     styleTable: {
       1: 'mapbox://styles/ruf0385/cjzw2ah6t0bp11cnz7p9xjz2k',
       2: 'mapbox://styles/mapbox/light-v10',
       3: 'mapbox://styles/mapbox/cj5l80zrp29942rmtg0zctjto'
     }
- }    
+ }
 
 
 
   componentDidMount() {
-    console.log(document.getElementsByClassName('main-col')[0].style);
     mapboxgl.accessToken = this.state.token
 
     //add Mapbox and Canvas API to DOM
@@ -56,7 +54,8 @@ class AboutMap extends Component {
       <div className={classes.MapWrapper}>
         <div
             id={this.state.mapId}
-            style={{height: this.state.mapHeight, width: this.state.mapWidth}}>
+            className={classes.Map}
+            style={{width: this.state.mapWidth}}>
         </div>
       </div>
     )

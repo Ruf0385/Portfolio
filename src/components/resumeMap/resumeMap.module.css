@@ -9,26 +9,27 @@ height: 80vh;
 }
 
 .location {
-opacity: 0.60;
+opacity: 0.5;
 /* margin: 0px 0px; */
 }
 
 .location.active {
 opacity: 1;
+border: 1px solid red;
 }
 
 .WorkOrEducation {
-    font: 50px 'Noto Sans TC Black', serif;
-    text-transform: uppercase;
-    letter-spacing: 15px;
-    color: #fff;
-    margin: 10px 0 !important;
-    padding: 0 0 0 15px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    z-index: 4;
-    border-radius: 3px;
-    background-color: #000;
- }
+font: 50px 'Noto Sans TC Black', serif;
+text-transform: uppercase;
+letter-spacing: 15px;
+color: #fff;
+margin: 10px 0 !important;
+padding: 0 0 0 15px;
+position: absolute;
+top: 0;
+left: 50%;
+transform: translate(-50%, 0%);
+z-index: 4;
+border-radius: 3px;
+background-color: #000;
+}

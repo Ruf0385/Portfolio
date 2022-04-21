@@ -52,19 +52,9 @@ header .banner {
    text-align: left;
 }
 
-header .banner button {
-   font: 75px/1.1em 'Noto Sans TC Black', sans-serif;
-   margin: 30px 0 0 0;
-   background: #C7191B;
-   color: #fff;
-}
-header .banner button:hover {
-   background: #000
-}
-
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 120px/1.1em 'Noto Sans TC Black', sans-serif;
+   font: 100px/1.1em 'Noto Sans TC Black', sans-serif;
    text-transform: uppercase;
    color: #000;
    letter-spacing: 0px;
@@ -87,10 +77,6 @@ header .banner-text p {
    border-left: 5px dotted #000;
    padding: 0 0 20px 30px;
    margin: 0;
-   /* background-color:rgba(24, 24, 24, 0.8); */
-   /* margin: 0 auto; */
-   /* width: 70%; */
-   /* text-shadow: 0px 1px 2px rgba(0, 0, 0, .5); */
 }
 header .banner-text a {
    text-decoration: none;
@@ -100,22 +86,8 @@ header .banner-text a {
 header .banner-text a:hover {
    background-image: linear-gradient(180deg,  #b9daf9 100%, #b9daf9 100%);
 }
-/* header .banner-text h3 span,
-header .banner-text h3 a {
-   color: #000;
-}
-header .banner-text hr {
-   width: 60%;
-   margin: 18px auto 24px auto;
-   border-color: #2F2D2E;
-   border-color: rgba(150, 150, 150, .1);
-} */
-
-/* header social links */
-
 header p .tooltip {
    position: relative;
-   /* border: 1px dashed #000; If you want dots under the hoverable text */
    text-decoration: none;
    background-image: linear-gradient(180deg, transparent 60%, #b9daf9 40%);
    color: #000 !important;
@@ -126,13 +98,12 @@ header p .tooltip {
    font: 21px/1.1em 'Noto Sans TC Bold', serif;
    text-transform: uppercase;
    visibility: hidden;
+   white-space: nowrap;
    width: auto;
    background-color: #b9daf9;
    border: 2px dashed #000;
    color: #000;
    padding: 5px 5px;
-
-   /* Position the tooltip text */
    position: absolute;
    z-index: 1;
    bottom: 50%;
@@ -149,6 +120,17 @@ header p .tooltip {
    visibility: visible;
    cursor: crosshair;
  }
+
+ header .banner button {
+   font: 45px/1.1em 'Noto Sans TC Black', sans-serif;
+   margin: 30px 0 0 0;
+   background: #C7191B;
+   color: #fff;
+}
+
+header .banner button:hover {
+   background: #000
+}
 
 header .social {
    margin: 24px 0;
@@ -258,7 +240,6 @@ ul#nav li.current a { color: #85BFF9; }
    margin-top: 50px;
    padding: 50px 5%;
    min-height: 100vh;
-   overflow: hidden;
 }
 
 #about .aboutPhoto {
@@ -274,51 +255,34 @@ ul#nav li.current a { color: #85BFF9; }
 #about a, #about a:visited  { color: #fff; }
 #about a:hover, #about a:focus { color: #85BFF9; }
 
-#about .row {
-   margin: 20px 0 !important;
-   max-width: 100% !important;
-   width: 100% !important;
-   height: auto;
-   /* text-shadow: 0px 1px 3px rgba(0, 0, 0, .8); */
-}
-
-#about .column, .columns {
-   padding: 0 20px 0 0 !important;
-}
-
-
-#about h1 {
-   font: 120px/1.1em 'Noto Sans TC Black', sans-serif;
-   text-transform: uppercase;
-   color: #000;
-   letter-spacing: 0px;
-   margin: 0 auto 18px auto;
-   /* text-shadow: 0px 1px 3px rgba(0, 0, 0, .8); */
-}
-
 #about h2 {
    font: 50px 'Noto Sans TC Black', serif;
    text-transform: uppercase;
-   letter-spacing: 15px;
+   letter-spacing: 10px;
    color: #fff;
    border-radius: 3px;
    background-color: #000;
    padding: 0 0 0 15px;
-
+   display: inline !important;
 }
+
+#about svg {
+   left: 0px;
+   float: left;
+}
+
 #about h3 {
-   font: 40px/1.9em 'Noto Sans TC Bold', sans-serif;
+   font: 40px/1.1em 'Noto Sans TC Bold', sans-serif;
    color: #000;
-   margin-bottom: 12px;
+   margin: 0 0 12px 45px;
 }
-
 
 #about p {
-   font: 21px/1.9em 'merriweatherlight', serif;
+   font: 21px/1.3em 'merriweatherlight', serif;
    color: #000;
    border-left: 5px dotted #000;
    padding: 0 0 20px 30px;
-   margin: 0;
+   margin: 0 0 50px 0;
 }
 
 #about p .tooltip {
@@ -327,26 +291,25 @@ ul#nav li.current a { color: #85BFF9; }
    text-decoration: none;
    background-image: linear-gradient(180deg, transparent 60%, #b9daf9 40%);
    color: #000 !important;
+   overflow: visible !important;
  }
  
  /* Tooltip text */
  #about p .tooltip .tooltiptext {
-   font: 21px/1.9em 'Noto Sans TC Bold', serif;
+   font: 21px/1.1em 'Noto Sans TC Bold', serif;
    text-transform: uppercase;
    visibility: hidden;
+   overflow: visible;
    width: auto;
    background-color: #b9daf9;
    border: 2px dashed #000;
    color: #000;
    padding: 5px 5px;
-
-   /* Position the tooltip text */
    position: absolute;
    z-index: 1;
    bottom: 50%;
    left: 25%; 
-   margin-left: 10px;
-   
+   margin-left: 10px;   
  }
  
  #about p .tooltip:hover {
@@ -359,6 +322,19 @@ ul#nav li.current a { color: #85BFF9; }
    cursor: crosshair;
  }
 
+ #about .column, .columns {
+   position: relative;
+   padding: 0 5px;
+   min-height: 1px;
+   float: left;
+}
+
+#about .row {
+   margin: 0px !important;
+   max-width: 100% !important;
+   width: 100% !important;
+   height: auto;
+}
 
 #about .profile-pic {
    float: left;
@@ -372,7 +348,8 @@ ul#nav li.current a { color: #85BFF9; }
    width: 58.33333%;
    padding-top: 6px;
 }
-#about .main-col { padding-right: 5%; }
+
+
 #about .submit .button {
    margin-top: 6px;
    background: #444;
@@ -386,18 +363,7 @@ ul#nav li.current a { color: #85BFF9; }
    font-size: 20px;
 }
 
-#about input,
-#about select {
-   padding: 18px 20px;
-	color: #eee;
-	background: #373233;
-	margin-bottom: 12px;
-	border: 0;
-	outline: none;
-   font-size: 15px;
-   line-height: 24px;
-   width: 65%;
-}
+
 #about input:focus,
 #about textarea:focus,
 #about select:focus {
@@ -434,8 +400,7 @@ ul#nav li.current a { color: #85BFF9; }
 
 #resume .skill {
    margin-top: 90px;
-   max-width: 100% !important;
-   width: 90% !important;
+   min-width: 90%;
    height: auto;
 }
 
@@ -456,9 +421,15 @@ ul#nav li.current a { color: #85BFF9; }
    padding: 0 0 0 15px;
 }
 
+#resume svg {
+   left: 0px;
+   float: left;
+}
+
 #resume h3 {
-   font: 40px 'Noto Sans TC Bold', sans-serif;
+   font: 40px/1.1em 'Noto Sans TC Bold', sans-serif;
    color: #000;
+   margin: 0 0 12px 45px;
 }
 
 #resume p {
@@ -506,8 +477,8 @@ ul#nav li.current a { color: #85BFF9; }
   	border-radius: 3px;
 }
 .bars li em {
-	font: 15px 'black_han_sansregular', sans-serif;
-   color: #313131;
+	font: 15px 'Noto Sans TC Black', sans-serif;
+   color: #000;
 	text-transform: uppercase;
    letter-spacing: 2px;
 	font-weight: normal;
@@ -518,10 +489,9 @@ ul#nav li.current a { color: #85BFF9; }
    position: absolute;
    left: 0;
    top: 0;
-
    margin: 0;
    padding-right: 24px;
-  	background: #000y;
+  	background: #000;
    display: inline-block;
   	height: 42px;
    line-height: 42px;
@@ -559,9 +529,9 @@ ul#nav li.current a { color: #85BFF9; }
   	-webkit-animation: qgis 2s ease;
 }
 .react {
-   width: 50%;
-   -moz-animation: qgis 2s ease;
-   -webkit-animation: qgis 2s ease;
+   width: 30%;
+   -moz-animation: react 2s ease;
+   -webkit-animation: react 2s ease;
 }
 .windows {
    width: 50%;
@@ -595,7 +565,7 @@ ul#nav li.current a { color: #85BFF9; }
 }
 @-moz-keyframes react {
    0%   { width: 0px;  }
-   100% { width: 50%;  }
+   100% { width: 30%;  }
  }
  @-moz-keyframes windows {
    0%   { width: 0px;  }
@@ -628,7 +598,7 @@ ul#nav li.current a { color: #85BFF9; }
 }
 @-webkit-keyframes react {
    0%   { width: 0px;  }
-   100% { width: 50%;  }
+   100% { width: 30%;  }
  }
  @-webkit-keyframes windows {
    0%   { width: 0px;  }
@@ -641,9 +611,9 @@ ul#nav li.current a { color: #85BFF9; }
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
-   padding-top: 90px;
-   padding-bottom: 60px;
+   background: #fff;
+   padding: 100px 0;
+   min-height: 100vh;
 }
 #portfolio h1 {
    font: 15px/24px 'black_han_sansregular', sans-serif;
@@ -654,12 +624,40 @@ ul#nav li.current a { color: #85BFF9; }
    color: #95A3A3;
 }
 
+#portfolio h2 {
+   font: 50px 'Noto Sans TC Black', serif;
+   text-transform: uppercase;
+   letter-spacing: 15px;
+   color: #fff;
+   border-radius: 3px;
+   background-color: #000;
+   padding: 0 0 0 15px;
+}
+
+#portfolio svg {
+   left: 0px;
+   float: left;
+}
+
+#portfolio h3 {
+   font: 40px/1.1em 'Noto Sans TC Bold', sans-serif;
+   color: #000;
+}
+
+#portfolio h4 {
+   font: 30px/1.1em 'Noto Sans TC Bold', sans-serif;
+   line-height: 1em;
+   color: #fff;
+   margin-bottom: 12px;
+}
+
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;
    overflow: hidden;
    position: relative;
+   border-radius: 3px;
 
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -689,7 +687,7 @@ ul#nav li.current a { color: #85BFF9; }
 	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 
-   background: rgba(133,191,249,0.8);
+   background: rgba(199,25,27,.8);
 }
 .portfolio-item .item-wrap .link-icon {
    display: block;
@@ -718,13 +716,13 @@ ul#nav li.current a { color: #85BFF9; }
 .portfolio-item .item-wrap img {
    vertical-align: bottom;
 }
-.portfolio-item .portfolio-item-meta { padding: 18px }
-.portfolio-item .portfolio-item-meta h5 {
-   font: 14px/21px 'black_han_sansregular', sans-serif;
-   color: #fff;
+.portfolio-item .portfolio-item-meta { padding: 10px }
+.portfolio-item .portfolio-item-meta h3 {
+   font: 21px 'Noto Sans TC Bold', sans-serif;
+   color: #000;
 }
 .portfolio-item .portfolio-item-meta p {
-   font: 12px/18px 'black_han_sansregular', sans-serif;
+   font: 18px 'Noto Sans TC Redular', sans-serif;
    color: #fff;
    margin-bottom: 0;
 }
@@ -743,21 +741,33 @@ ul#nav li.current a { color: #85BFF9; }
 
 /* popup modal */
 .popup-modal {
-	max-width: 550px;
+   max-width: 50vw;
+   max-height: 90vh;
 	background: #fff;
 	position: relative;
-	margin: 0 auto;
+   margin: 0 auto;
+   overflow-y: scroll;
 }
-.popup-modal .description-box { padding: 12px 36px 18px 36px; }
+.popup-modal .description-box { 
+   padding: 12px 36px 18px 36px; 
+}
+
+.popup-modal .description-box svg {
+   left: 0px;
+   float: left;
+}
+
 .popup-modal .description-box h4 {
-   font: 15px/24px 'black_han_sansregular', sans-serif;
-	margin-bottom: 12px;
-   color: #111;
+   font: 40px/1.1em 'Noto Sans TC Bold', sans-serif;
+   color: #000;
+   margin: 0 0 12px 45px;
 }
 .popup-modal .description-box p {
-	font: 14px/24px 'black_han_sansregular', sans-serif;
-   color: #A1A1A1;
-   margin-bottom: 12px;
+   font: 21px/1.9em 'merriweatherlight', serif;
+   color: #000;
+   border-left: 5px dotted #000;
+   padding: 0 0 20px 30px;
+   margin: 0;
 }
 .popup-modal .description-box .categories {
    font: 11px/21px 'black_han_sansregular', sans-serif;
@@ -812,7 +822,7 @@ ul#nav li.current a { color: #85BFF9; }
 /* ------------------------------------------------------------------ */
 
 #call-to-action {
-   background: #212121;
+   background: #cec0c0;
    padding-top: 66px;
    padding-bottom: 48px;
 }
@@ -1018,68 +1028,89 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919;
-   padding-top: 96px;
-   padding-bottom: 102px;
+   background-color: #c7191b;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23ca6d6f' fill-opacity='0.4' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
+   padding: 10vh 5% 10vh 5%;
    color: #636363;
 }
 #contact .section-head { margin-bottom: 42px; }
+
+#contact .row{
+   margin: 0 !important;
+}
 
 #contact a, #contact a:visited  { color: #85BFF9; }
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
-   font: 18px/24px 'black_han_sansregular', sans-serif;
+   font: 100px/1.1em 'Noto Sans TC Black', sans-serif;
    text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #EBEEEE;
-   margin-bottom: 6px;
-}
-#contact h1 span { display: none; }
-#contact h1:before {
-   font-family: 'FontAwesome';
-   content: "\f0e0";
-	padding-right: 10px;
-	font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #ebeeee;
+   color: #fff;
+   letter-spacing: 0px;
+   margin: 0 auto 18px auto;
+   /* text-shadow: 0px 1px 3px rgba(0, 0, 0, .8); */
 }
 
+#contact h2 {
+   font: 50px 'Noto Sans TC Bold', sans-serif;
+   background-color: #000;
+   text-transform: uppercase;
+   letter-spacing: 15px;
+   padding: 0 0 0 20px;
+   border-radius: 3px;  
+   color: #fff;
+   display: inline !important;
+}
+
+#contact svg {
+   left: 0px;
+   float: left;
+}
+
+#contact h3 {
+   font: 40px/1.1em 'Noto Sans TC Bold', sans-serif;
+   color: #fff;
+   margin: 0 0 12px 45px;
+}
+
+
 #contact h4 {
-   font: 16px/24px 'black_han_sansregular', sans-serif;
-   color: #EBEEEE;
+   font: 30px 'Noto Sans TC Bold', sans-serif;
+   color: #fff;
    margin-bottom: 6px;
 }
-#contact p.lead {
-   font: 18px/36px 'black_han_sansregular', sans-serif;
-   padding-right: 3%;
+
+#contact p {
+   font: 21px/1.3em 'merriweather', serif;
+   color: #fff;
+   border-left: 5px dotted #fff;
+   padding: 0 0 20px 30px;
 }
+
 #contact .header-col { padding-top: 6px; }
 
 
 /* contact form */
 #contact form { margin-bottom: 30px; }
 #contact label {
-   font: 15px/24px 'black_han_sansregular', sans-serif;
-   margin: 12px 0;
-   color: #EBEEEE;
-	display: inline-block;
+   font: 40px 'Noto Sans TC Bold', sans-serif;
+   color: #fff;
+   display: inline-block;
+   letter-spacing: 2px;
+   margin: 0 !important;
 	float: left;
    width: 26%;
 }
 #contact input,
 #contact textarea,
 #contact select {
+   font: 21px/1.1em 'merriweatherlight', serif;
    padding: 18px 20px;
 	color: #eee;
-	background: #373233;
+	background: #000;
 	margin-bottom: 42px;
-	border: 0;
+	border-radius: 3px;
 	outline: none;
-   font-size: 15px;
-   line-height: 24px;
    width: 65%;
 }
 #contact input:focus,
@@ -1088,25 +1119,20 @@ call-to-action .button {
 	color: #fff;
 	background-color: #85BFF9;
 }
-#contact button.submit {
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	color:#fff;
-   background: #0D0D0D;
-	border: none;
-   cursor: pointer;
-   height: auto;
-   display: inline-block;
-	border-radius: 3px;
-   margin-left: 26%;
+#contact a.submit {
+   font: 50px/1.1em 'Noto Sans TC Black', sans-serif;
+   border-radius: 3px;
+   padding: 0 10px;
+   background: #fff;
+   color: #C7191B;
 }
-#contact button.submit:hover {
-	color: #0D0D0D;
+#contact a.submit:hover {
+	color: #000;
 	background: #fff;
 }
 #contact span.required {
-	color: #85BFF9;
-	font-size: 13px;
+	color: #fff;
+	font-size: 40px;
 }
 #message-warning, #message-success {
    display: none;
@@ -1116,7 +1142,7 @@ call-to-action .button {
    width: 65%;
    margin-left: 26%;
 }
-#message-warning { color: #D72828; }
+#message-warning { color: #C7191B; }
 #message-success { color: #85BFF9; }
 
 #message-warning i,
@@ -1145,7 +1171,7 @@ call-to-action .button {
 }
 #twitter li b a {
    font: 13px/36px 'black_han_sansregular', Sans-serif;
-   color: #474747 !important;
+   color: #000 !important;
    border: none;
 }
 
@@ -1156,20 +1182,23 @@ call-to-action .button {
 
 footer {
    padding-top: 48px;
-   margin-bottom: 48px;
-   color: #303030;
+   /* margin-bottom: 48px; */
+   color: #000;
    font-size: 14px;
    text-align: center;
    position: relative;
 }
 
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+footer a, footer a:visited { color: #000; }
+footer a:hover, footer a:focus { color: #C7191B; }
 
 /* copyright */
 footer .copyright {
-    margin: 0;
+   font: 15px/1.1em 'Noto Sans TC Black', sans-serif;
+    margin: 10px 0 50px 0;
     padding: 0;
+    text-transform: uppercase;
+    color: #ddd;
  }
 footer .copyright li {
     display: inline-block;
@@ -1219,7 +1248,7 @@ footer .social-links li:first-child { margin-left: 0; }
 	display: block;
 	width: 60px;
 	height: 60px;
-	background-color: #525252;
+	background-color: #000;
 
 	-webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
@@ -1232,5 +1261,6 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #85BFF9; }
+
+#go-top a:hover { background-color: #C7191B  ; }
 

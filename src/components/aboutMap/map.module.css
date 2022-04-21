@@ -2,3 +2,16 @@
     /* margin: 10px; */
     z-index: 3;
   }
+
+  @media only screen and (min-width: 1351px) {
+    .Map {
+      height: 80vh;
+    }
+      }
+
+  @media only screen and (max-width: 1350px) {
+
+.Map {
+  height: 115vh;
+}
+  }
